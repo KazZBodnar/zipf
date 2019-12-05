@@ -14,10 +14,11 @@ for word in words:
     count = word_count.get(word, 0)
     count += 1
     word_count[word] = count
-
+rank = 1
 out_file = sys.argv[2]
 word_count_list = sorted(word_count, key=word_count.get, reverse=True)
 file_out = open(out_file, 'w')
 writer = csv.writer(file_out)
 for word in word_count_list:
-    writer.writerow([word, word_count[word]])
+    writer.writerow([word, word_count[word], rank])
+    rank += 1
