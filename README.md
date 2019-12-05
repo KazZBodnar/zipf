@@ -1,4 +1,4 @@
-# Common-Word-Sorter
+# A programming exercise based on Zipf's law 
 A common word sorter written in python
 
 ## Note
